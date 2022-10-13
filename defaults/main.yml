@@ -1,0 +1,3 @@
+---
+WIFISSID="{{ lookup('env','WIFISSID') }}"
+WIFIPASSWORD="{{ lookup('env','WIFIPASS') }}"
