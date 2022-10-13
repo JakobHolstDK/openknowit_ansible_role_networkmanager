@@ -1,0 +1,8 @@
+
+- name: debian | Run the equivalent of "apt-get update" as a separate step
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: debian | Apt update
+  ansible.builtin.apt:
+    upgrade: dist

@@ -1,3 +1,8 @@
-- name: redhat | enabling the RabbitMQ Management Console
-  rabbitmq_plugin: names=rabbitmq_management state=enabled
-  notify: restart rabbitmq-server
+- name: ubuntu | Run the equivalent of "apt-get update" as a separate step
+  ansible.builtin.apt:
+    update_cache: yes
+
+- name: ubuntu | Apt update
+  ansible.builtin.apt:
+    upgrade: distbitMQ Management Console
+
